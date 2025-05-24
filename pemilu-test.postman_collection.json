@@ -1,0 +1,1625 @@
+{
+	"info": {
+		"_postman_id": "b5eb71d6-ab07-4acb-9313-66f866c02963",
+		"name": "pemilu-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10950457"
+	},
+	"item": [
+		{
+			"name": "dapil",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namaDapil\": \"dapil 1\",\r\n    \"provinsi\": \"JAWA BARAT\",\r\n    \"wilayahDapilList\": [\"Kota Bandung\", \"Kabupaten Bandung\"],\r\n    \"jumlahKursi\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8015/api/dapil",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"dapil"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"namaDapil\": \"dapil 1\",\r\n    \"provinsi\": \"JAWA BARAT\",\r\n    \"wilayahDapilList\": [\"Kota Bandung\", \"Kabupaten Bandung\"],\r\n    \"jumlahKursi\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8015/api/dapil",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"dapil"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 May 2025 14:33:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Berhasil membuat data dapil.\",\n    \"data\": {\n        \"id\": \"443a8ccf-a1dd-4e32-afe2-0cb96acb5c04\",\n        \"namaDapil\": \"dapil 1\",\n        \"provinsi\": \"JAWA BARAT\",\n        \"wilayahDapilList\": [\n            \"Kota Bandung\",\n            \"Kabupaten Bandung\"\n        ],\n        \"jumlahKursi\": 2,\n        \"createdAt\": \"2025-05-23T21:33:14.208117\",\n        \"updatedAt\": \"2025-05-23T21:33:14.208117\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namaDapil\": \"dapil 1\",\r\n    \"provinsi\": \"JAWA BARAT\",\r\n    \"wilayahDapilList\": [\"Kota Bandung\", \"Kabupaten Bandung\", \"Kabupaten Bandung Barat\"],\r\n    \"jumlahKursi\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8015/api/dapil/55c1dd16-dc6e-4cea-b149-0912fab6c1da",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"dapil",
+								"55c1dd16-dc6e-4cea-b149-0912fab6c1da"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"namaDapil\": \"dapil 1\",\r\n    \"provinsi\": \"JAWA BARAT\",\r\n    \"wilayahDapilList\": [\"Kota Bandung\", \"Kabupaten Bandung\", \"Kabupaten Bandung Barat\"],\r\n    \"jumlahKursi\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8015/api/dapil/55c1dd16-dc6e-4cea-b149-0912fab6c1da",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"dapil",
+										"55c1dd16-dc6e-4cea-b149-0912fab6c1da"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:11:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mengubah data dapil.\",\n    \"data\": {\n        \"id\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\n        \"namaDapil\": \"dapil 1\",\n        \"provinsi\": \"JAWA BARAT\",\n        \"wilayahDapilList\": [\n            \"Kota Bandung\",\n            \"Kabupaten Bandung\",\n            \"Kabupaten Bandung Barat\"\n        ],\n        \"jumlahKursi\": 2,\n        \"createdAt\": \"2025-05-23T22:16:35.971345\",\n        \"updatedAt\": \"2025-05-24T11:11:23.6849453\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "activate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/dapil/activate/55c1dd16-dc6e-4cea-b149-0912fab6c1da",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"dapil",
+								"activate",
+								"55c1dd16-dc6e-4cea-b149-0912fab6c1da"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "activate",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/dapil/activate/55c1dd16-dc6e-4cea-b149-0912fab6c1da",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"dapil",
+										"activate",
+										"55c1dd16-dc6e-4cea-b149-0912fab6c1da"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:02:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mengaktifkan data dapil.\",\n    \"data\": {\n        \"id\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\n        \"namaDapil\": \"dapil 1\",\n        \"provinsi\": \"JAWA BARAT\",\n        \"wilayahDapilList\": [\n            \"Kota Bandung\",\n            \"Kabupaten Bandung\"\n        ],\n        \"jumlahKursi\": 2,\n        \"createdAt\": \"2025-05-23T22:16:35.971345\",\n        \"updatedAt\": \"2025-05-23T22:16:35.971345\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deactivate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/dapil/deactivate/55c1dd16-dc6e-4cea-b149-0912fab6c1da",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"dapil",
+								"deactivate",
+								"55c1dd16-dc6e-4cea-b149-0912fab6c1da"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deactivate",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/dapil/deactivate/55c1dd16-dc6e-4cea-b149-0912fab6c1da",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"dapil",
+										"deactivate",
+										"55c1dd16-dc6e-4cea-b149-0912fab6c1da"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:02:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil menonaktifkan data dapil.\",\n    \"data\": {\n        \"id\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\n        \"namaDapil\": \"dapil 1\",\n        \"provinsi\": \"JAWA BARAT\",\n        \"wilayahDapilList\": [\n            \"Kota Bandung\",\n            \"Kabupaten Bandung\"\n        ],\n        \"jumlahKursi\": 2,\n        \"createdAt\": \"2025-05-23T22:16:35.971345\",\n        \"updatedAt\": \"2025-05-23T22:16:35.971345\",\n        \"deletedAt\": \"2025-05-24T11:02:15.5938516\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get by dapilId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/dapil/443a8ccf-a1dd-4e32-afe2-0cb96acb5c04",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"dapil",
+								"443a8ccf-a1dd-4e32-afe2-0cb96acb5c04"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/dapil/443a8ccf-a1dd-4e32-afe2-0cb96acb5c04",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"dapil",
+										"443a8ccf-a1dd-4e32-afe2-0cb96acb5c04"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 May 2025 14:33:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mendapatkan data dapil.\",\n    \"data\": {\n        \"id\": \"443a8ccf-a1dd-4e32-afe2-0cb96acb5c04\",\n        \"namaDapil\": \"dapil 1\",\n        \"provinsi\": \"JAWA BARAT\",\n        \"wilayahDapilList\": [\n            \"Kota Bandung\",\n            \"Kabupaten Bandung\"\n        ],\n        \"jumlahKursi\": 2,\n        \"createdAt\": \"2025-05-23T21:33:14.208117\",\n        \"updatedAt\": \"2025-05-23T21:33:14.208117\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/dapil?namaDapil=1&provinsi=jaw&jumlahKursi=2&page=1&pageSize=5&deleted=false",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"dapil"
+							],
+							"query": [
+								{
+									"key": "namaDapil",
+									"value": "1"
+								},
+								{
+									"key": "provinsi",
+									"value": "jaw"
+								},
+								{
+									"key": "jumlahKursi",
+									"value": "2"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "default 1"
+								},
+								{
+									"key": "pageSize",
+									"value": "5",
+									"description": "default 10"
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "default null"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/dapil?namaDapil=1&provinsi=jaw&jumlahKursi=2&page=1&pageSize=5&deleted=false",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"dapil"
+									],
+									"query": [
+										{
+											"key": "namaDapil",
+											"value": "1"
+										},
+										{
+											"key": "provinsi",
+											"value": "jaw"
+										},
+										{
+											"key": "jumlahKursi",
+											"value": "2"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "default 1"
+										},
+										{
+											"key": "pageSize",
+											"value": "5",
+											"description": "default 10"
+										},
+										{
+											"key": "deleted",
+											"value": "false",
+											"description": "default null"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 May 2025 15:12:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mendapatkan data dapil.\",\n    \"data\": [\n        {\n            \"id\": \"443a8ccf-a1dd-4e32-afe2-0cb96acb5c04\",\n            \"namaDapil\": \"dapil 1\",\n            \"provinsi\": \"JAWA BARAT\",\n            \"wilayahDapilList\": [\n                \"Kota Bandung\",\n                \"Kabupaten Bandung\",\n                \"Kabupaten Bandung Barat\"\n            ],\n            \"jumlahKursi\": 2,\n            \"createdAt\": \"2025-05-23T21:33:14.208117\",\n            \"updatedAt\": \"2025-05-23T21:33:14.208117\",\n            \"deletedAt\": null\n        }\n    ],\n    \"currentPage\": 1,\n    \"totalPages\": 1,\n    \"totalCount\": 1\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "partai",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namaPartai\": \"partai garuda\",\r\n    \"nomorUrut\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8015/api/partai",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"partai"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"namaPartai\": \"partai garuda\",\r\n    \"nomorUrut\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8015/api/partai",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"partai"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:03:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Berhasil membuat data partai.\",\n    \"data\": {\n        \"id\": \"f640c801-6286-4966-82b2-de184474a666\",\n        \"namaPartai\": \"partai garuda\",\n        \"nomorUrut\": 1,\n        \"createdAt\": \"2025-05-24T11:03:22.9143278\",\n        \"updatedAt\": \"2025-05-24T11:03:22.9143278\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namaPartai\": \"partai burung\",\r\n    \"nomorUrut\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8015/api/partai/f640c801-6286-4966-82b2-de184474a666",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"partai",
+								"f640c801-6286-4966-82b2-de184474a666"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"namaPartai\": \"partai burung\",\r\n    \"nomorUrut\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8015/api/partai/f640c801-6286-4966-82b2-de184474a666",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"partai",
+										"f640c801-6286-4966-82b2-de184474a666"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:03:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mengubah data partai.\",\n    \"data\": {\n        \"id\": \"f640c801-6286-4966-82b2-de184474a666\",\n        \"namaPartai\": \"partai burung\",\n        \"nomorUrut\": 1,\n        \"createdAt\": \"2025-05-24T11:03:22.914328\",\n        \"updatedAt\": \"2025-05-24T11:03:55.8181991\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "activate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/partai/activate/f640c801-6286-4966-82b2-de184474a666",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"partai",
+								"activate",
+								"f640c801-6286-4966-82b2-de184474a666"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "activate",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/partai/activate/f640c801-6286-4966-82b2-de184474a666",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"partai",
+										"activate",
+										"f640c801-6286-4966-82b2-de184474a666"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:04:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mengaktifkan data partai.\",\n    \"data\": {\n        \"id\": \"f640c801-6286-4966-82b2-de184474a666\",\n        \"namaPartai\": \"partai burung\",\n        \"nomorUrut\": 1,\n        \"createdAt\": \"2025-05-24T11:03:22.914328\",\n        \"updatedAt\": \"2025-05-24T11:03:55.818199\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deactivate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/partai/deactivate/f640c801-6286-4966-82b2-de184474a666",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"partai",
+								"deactivate",
+								"f640c801-6286-4966-82b2-de184474a666"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deactivate",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/partai/deactivate/f640c801-6286-4966-82b2-de184474a666",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"partai",
+										"deactivate",
+										"f640c801-6286-4966-82b2-de184474a666"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:04:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil menonaktifkan data partai.\",\n    \"data\": {\n        \"id\": \"f640c801-6286-4966-82b2-de184474a666\",\n        \"namaPartai\": \"partai burung\",\n        \"nomorUrut\": 1,\n        \"createdAt\": \"2025-05-24T11:03:22.914328\",\n        \"updatedAt\": \"2025-05-24T11:03:55.818199\",\n        \"deletedAt\": \"2025-05-24T11:04:39.3075077\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get by partaiId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/partai/f640c801-6286-4966-82b2-de184474a666",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"partai",
+								"f640c801-6286-4966-82b2-de184474a666"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get by partaiId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/partai/f640c801-6286-4966-82b2-de184474a666",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"partai",
+										"f640c801-6286-4966-82b2-de184474a666"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:05:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mendapatkan data partai.\",\n    \"data\": {\n        \"id\": \"f640c801-6286-4966-82b2-de184474a666\",\n        \"namaPartai\": \"partai burung\",\n        \"nomorUrut\": 1,\n        \"createdAt\": \"2025-05-24T11:03:22.914328\",\n        \"updatedAt\": \"2025-05-24T11:03:55.818199\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/partai?namaPartai=partai&nomorUrut=1&page=1&pageSize=5&deleted=false",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"partai"
+							],
+							"query": [
+								{
+									"key": "namaPartai",
+									"value": "partai"
+								},
+								{
+									"key": "nomorUrut",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "default 1"
+								},
+								{
+									"key": "pageSize",
+									"value": "5",
+									"description": "default 10"
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "default null"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get Page",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/partai?namaPartai=partai&nomorUrut=1&page=1&pageSize=5&deleted=false",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"partai"
+									],
+									"query": [
+										{
+											"key": "namaPartai",
+											"value": "partai"
+										},
+										{
+											"key": "nomorUrut",
+											"value": "1"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "default 1"
+										},
+										{
+											"key": "pageSize",
+											"value": "5",
+											"description": "default 10"
+										},
+										{
+											"key": "deleted",
+											"value": "false",
+											"description": "default null"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:05:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mendapatkan data partai.\",\n    \"data\": [\n        {\n            \"id\": \"f640c801-6286-4966-82b2-de184474a666\",\n            \"namaPartai\": \"partai burung\",\n            \"nomorUrut\": 1,\n            \"createdAt\": \"2025-05-24T11:03:22.914328\",\n            \"updatedAt\": \"2025-05-24T11:03:55.818199\",\n            \"deletedAt\": null\n        }\n    ],\n    \"currentPage\": 1,\n    \"totalPages\": 1,\n    \"totalCount\": 1\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "caleg",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"caleg 1\",\r\n    \"dapilId\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\r\n    \"partaiId\": \"f640c801-6286-4966-82b2-de184474a666\",\r\n    \"nomorUrut\": 1,\r\n    \"jenisKelamin\": \"LAKILAKI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8015/api/caleg",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"caleg"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"caleg 1\",\r\n    \"dapilId\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\r\n    \"partaiId\": \"f640c801-6286-4966-82b2-de184474a666\",\r\n    \"nomorUrut\": 1,\r\n    \"jenisKelamin\": \"LAKILAKI\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8015/api/caleg",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"caleg"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:51:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Berhasil membuat data caleg.\",\n    \"data\": {\n        \"id\": \"f0a57f3f-1fd5-4dd4-92d9-b837a8dc8682\",\n        \"dapil\": {\n            \"id\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\n            \"namaDapil\": \"dapil 1\",\n            \"provinsi\": \"JAWA BARAT\",\n            \"wilayahDapilList\": [\n                \"Kota Bandung\",\n                \"Kabupaten Bandung\",\n                \"Kabupaten Bandung Barat\"\n            ],\n            \"jumlahKursi\": 2,\n            \"createdAt\": \"2025-05-23T22:16:35.971345\",\n            \"updatedAt\": \"2025-05-24T11:11:23.684945\",\n            \"deletedAt\": null\n        },\n        \"partai\": {\n            \"id\": \"f640c801-6286-4966-82b2-de184474a666\",\n            \"namaPartai\": \"partai burung\",\n            \"nomorUrut\": 1,\n            \"createdAt\": \"2025-05-24T11:03:22.914328\",\n            \"updatedAt\": \"2025-05-24T11:03:55.818199\",\n            \"deletedAt\": null\n        },\n        \"nomorUrut\": 1,\n        \"nama\": \"caleg 1\",\n        \"jenisKelamin\": \"LAKILAKI\",\n        \"createdAt\": \"2025-05-24T11:51:57.0271392\",\n        \"updatedAt\": \"2025-05-24T11:51:57.0271392\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"caleg 2\",\r\n    \"dapilId\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\r\n    \"partaiId\": \"b3987d6a-be70-4c39-858d-a1b8c58c95c0\",\r\n    \"nomorUrut\": 2,\r\n    \"jenisKelamin\": \"PEREMPUAN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8015/api/caleg/d0660a52-1f6f-4c8b-82ec-c586a9cb3302",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"caleg",
+								"d0660a52-1f6f-4c8b-82ec-c586a9cb3302"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"caleg 2\",\r\n    \"dapilId\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\r\n    \"partaiId\": \"b3987d6a-be70-4c39-858d-a1b8c58c95c0\",\r\n    \"nomorUrut\": 2,\r\n    \"jenisKelamin\": \"PEREMPUAN\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8015/api/caleg/d0660a52-1f6f-4c8b-82ec-c586a9cb3302",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"caleg",
+										"d0660a52-1f6f-4c8b-82ec-c586a9cb3302"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:53:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mengubah data caleg.\",\n    \"data\": {\n        \"id\": \"d0660a52-1f6f-4c8b-82ec-c586a9cb3302\",\n        \"dapil\": {\n            \"id\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\n            \"namaDapil\": \"dapil 1\",\n            \"provinsi\": \"JAWA BARAT\",\n            \"wilayahDapilList\": [\n                \"Kota Bandung\",\n                \"Kabupaten Bandung\",\n                \"Kabupaten Bandung Barat\"\n            ],\n            \"jumlahKursi\": 2,\n            \"createdAt\": \"2025-05-23T22:16:35.971345\",\n            \"updatedAt\": \"2025-05-24T11:11:23.684945\",\n            \"deletedAt\": null\n        },\n        \"partai\": {\n            \"id\": \"b3987d6a-be70-4c39-858d-a1b8c58c95c0\",\n            \"namaPartai\": \"partai kuda\",\n            \"nomorUrut\": 2,\n            \"createdAt\": \"2025-05-24T11:46:04.062778\",\n            \"updatedAt\": \"2025-05-24T11:46:04.062778\",\n            \"deletedAt\": null\n        },\n        \"nomorUrut\": 2,\n        \"nama\": \"caleg 2\",\n        \"jenisKelamin\": \"PEREMPUAN\",\n        \"createdAt\": \"2025-05-24T11:52:41.621428\",\n        \"updatedAt\": \"2025-05-24T11:53:55.9226096\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "activate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/caleg/activate/d0660a52-1f6f-4c8b-82ec-c586a9cb3302",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"caleg",
+								"activate",
+								"d0660a52-1f6f-4c8b-82ec-c586a9cb3302"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "activate",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/caleg/activate/d0660a52-1f6f-4c8b-82ec-c586a9cb3302",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"caleg",
+										"activate",
+										"d0660a52-1f6f-4c8b-82ec-c586a9cb3302"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:54:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mengaktifkan data caleg.\",\n    \"data\": {\n        \"id\": \"d0660a52-1f6f-4c8b-82ec-c586a9cb3302\",\n        \"dapil\": {\n            \"id\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\n            \"namaDapil\": \"dapil 1\",\n            \"provinsi\": \"JAWA BARAT\",\n            \"wilayahDapilList\": [\n                \"Kota Bandung\",\n                \"Kabupaten Bandung\",\n                \"Kabupaten Bandung Barat\"\n            ],\n            \"jumlahKursi\": 2,\n            \"createdAt\": \"2025-05-23T22:16:35.971345\",\n            \"updatedAt\": \"2025-05-24T11:11:23.684945\",\n            \"deletedAt\": null\n        },\n        \"partai\": {\n            \"id\": \"b3987d6a-be70-4c39-858d-a1b8c58c95c0\",\n            \"namaPartai\": \"partai kuda\",\n            \"nomorUrut\": 2,\n            \"createdAt\": \"2025-05-24T11:46:04.062778\",\n            \"updatedAt\": \"2025-05-24T11:46:04.062778\",\n            \"deletedAt\": null\n        },\n        \"nomorUrut\": 2,\n        \"nama\": \"caleg 2\",\n        \"jenisKelamin\": \"PEREMPUAN\",\n        \"createdAt\": \"2025-05-24T11:52:41.621428\",\n        \"updatedAt\": \"2025-05-24T11:53:55.92261\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deactivate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/caleg/deactivate/d0660a52-1f6f-4c8b-82ec-c586a9cb3302",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"caleg",
+								"deactivate",
+								"d0660a52-1f6f-4c8b-82ec-c586a9cb3302"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deactivate",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/caleg/deactivate/d0660a52-1f6f-4c8b-82ec-c586a9cb3302",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"caleg",
+										"deactivate",
+										"d0660a52-1f6f-4c8b-82ec-c586a9cb3302"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:54:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil menonaktifkan data caleg.\",\n    \"data\": {\n        \"id\": \"d0660a52-1f6f-4c8b-82ec-c586a9cb3302\",\n        \"dapil\": {\n            \"id\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\n            \"namaDapil\": \"dapil 1\",\n            \"provinsi\": \"JAWA BARAT\",\n            \"wilayahDapilList\": [\n                \"Kota Bandung\",\n                \"Kabupaten Bandung\",\n                \"Kabupaten Bandung Barat\"\n            ],\n            \"jumlahKursi\": 2,\n            \"createdAt\": \"2025-05-23T22:16:35.971345\",\n            \"updatedAt\": \"2025-05-24T11:11:23.684945\",\n            \"deletedAt\": null\n        },\n        \"partai\": {\n            \"id\": \"b3987d6a-be70-4c39-858d-a1b8c58c95c0\",\n            \"namaPartai\": \"partai kuda\",\n            \"nomorUrut\": 2,\n            \"createdAt\": \"2025-05-24T11:46:04.062778\",\n            \"updatedAt\": \"2025-05-24T11:46:04.062778\",\n            \"deletedAt\": null\n        },\n        \"nomorUrut\": 2,\n        \"nama\": \"caleg 2\",\n        \"jenisKelamin\": \"PEREMPUAN\",\n        \"createdAt\": \"2025-05-24T11:52:41.621428\",\n        \"updatedAt\": \"2025-05-24T11:53:55.92261\",\n        \"deletedAt\": \"2025-05-24T11:54:47.7815946\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get by calegId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/caleg/d0660a52-1f6f-4c8b-82ec-c586a9cb3302",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"caleg",
+								"d0660a52-1f6f-4c8b-82ec-c586a9cb3302"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get by calegId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/caleg/d0660a52-1f6f-4c8b-82ec-c586a9cb3302",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"caleg",
+										"d0660a52-1f6f-4c8b-82ec-c586a9cb3302"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:55:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mendapatkan data caleg.\",\n    \"data\": {\n        \"id\": \"d0660a52-1f6f-4c8b-82ec-c586a9cb3302\",\n        \"dapil\": {\n            \"id\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\n            \"namaDapil\": \"dapil 1\",\n            \"provinsi\": \"JAWA BARAT\",\n            \"wilayahDapilList\": [\n                \"Kota Bandung\",\n                \"Kabupaten Bandung\",\n                \"Kabupaten Bandung Barat\"\n            ],\n            \"jumlahKursi\": 2,\n            \"createdAt\": \"2025-05-23T22:16:35.971345\",\n            \"updatedAt\": \"2025-05-24T11:11:23.684945\",\n            \"deletedAt\": null\n        },\n        \"partai\": {\n            \"id\": \"b3987d6a-be70-4c39-858d-a1b8c58c95c0\",\n            \"namaPartai\": \"partai kuda\",\n            \"nomorUrut\": 2,\n            \"createdAt\": \"2025-05-24T11:46:04.062778\",\n            \"updatedAt\": \"2025-05-24T11:46:04.062778\",\n            \"deletedAt\": null\n        },\n        \"nomorUrut\": 2,\n        \"nama\": \"caleg 2\",\n        \"jenisKelamin\": \"PEREMPUAN\",\n        \"createdAt\": \"2025-05-24T11:52:41.621428\",\n        \"updatedAt\": \"2025-05-24T11:53:55.92261\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8015/api/caleg?page=1&pageSize=5&deleted=false",
+							"host": [
+								"localhost"
+							],
+							"port": "8015",
+							"path": [
+								"api",
+								"caleg"
+							],
+							"query": [
+								{
+									"key": "nama",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "nomorUrut",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "jenisKelamin",
+									"value": "PEREMPUAN",
+									"disabled": true
+								},
+								{
+									"key": "dapilId",
+									"value": "55c1dd16-dc6e-4cea-b149-0912fab6c1da",
+									"disabled": true
+								},
+								{
+									"key": "partaiId",
+									"value": "f640c801-6286-4966-82b2-de184474a666",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "default 1"
+								},
+								{
+									"key": "pageSize",
+									"value": "5",
+									"description": "default 10"
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "default null"
+								},
+								{
+									"key": "sortBy",
+									"value": "nama",
+									"description": "default nomor_urut",
+									"disabled": true
+								},
+								{
+									"key": "sortOrder",
+									"value": "desc",
+									"description": "default asc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get Page",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/partai?namaPartai=partai&nomorUrut=1&page=1&pageSize=5&deleted=false",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"partai"
+									],
+									"query": [
+										{
+											"key": "namaPartai",
+											"value": "partai"
+										},
+										{
+											"key": "nomorUrut",
+											"value": "1"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "default 1"
+										},
+										{
+											"key": "pageSize",
+											"value": "5",
+											"description": "default 10"
+										},
+										{
+											"key": "deleted",
+											"value": "false",
+											"description": "default null"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:05:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mendapatkan data partai.\",\n    \"data\": [\n        {\n            \"id\": \"f640c801-6286-4966-82b2-de184474a666\",\n            \"namaPartai\": \"partai burung\",\n            \"nomorUrut\": 1,\n            \"createdAt\": \"2025-05-24T11:03:22.914328\",\n            \"updatedAt\": \"2025-05-24T11:03:55.818199\",\n            \"deletedAt\": null\n        }\n    ],\n    \"currentPage\": 1,\n    \"totalPages\": 1,\n    \"totalCount\": 1\n}"
+						},
+						{
+							"name": "get Page",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8015/api/caleg?page=1&pageSize=5&deleted=false",
+									"host": [
+										"localhost"
+									],
+									"port": "8015",
+									"path": [
+										"api",
+										"caleg"
+									],
+									"query": [
+										{
+											"key": "nama",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "nomorUrut",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "jenisKelamin",
+											"value": "PEREMPUAN",
+											"disabled": true
+										},
+										{
+											"key": "dapilId",
+											"value": "55c1dd16-dc6e-4cea-b149-0912fab6c1da",
+											"disabled": true
+										},
+										{
+											"key": "partaiId",
+											"value": "f640c801-6286-4966-82b2-de184474a666",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "default 1"
+										},
+										{
+											"key": "pageSize",
+											"value": "5",
+											"description": "default 10"
+										},
+										{
+											"key": "deleted",
+											"value": "false",
+											"description": "default null"
+										},
+										{
+											"key": "sortBy",
+											"value": "nama",
+											"description": "default nomor_urut",
+											"disabled": true
+										},
+										{
+											"key": "sortOrder",
+											"value": "desc",
+											"description": "default asc",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 May 2025 04:59:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mendapatkan data caleg.\",\n    \"data\": [\n        {\n            \"id\": \"f0a57f3f-1fd5-4dd4-92d9-b837a8dc8682\",\n            \"dapil\": {\n                \"id\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\n                \"namaDapil\": \"dapil 1\",\n                \"provinsi\": \"JAWA BARAT\",\n                \"wilayahDapilList\": [\n                    \"Kota Bandung\",\n                    \"Kabupaten Bandung\",\n                    \"Kabupaten Bandung Barat\"\n                ],\n                \"jumlahKursi\": 2,\n                \"createdAt\": \"2025-05-23T22:16:35.971345\",\n                \"updatedAt\": \"2025-05-24T11:11:23.684945\",\n                \"deletedAt\": null\n            },\n            \"partai\": {\n                \"id\": \"f640c801-6286-4966-82b2-de184474a666\",\n                \"namaPartai\": \"partai burung\",\n                \"nomorUrut\": 1,\n                \"createdAt\": \"2025-05-24T11:03:22.914328\",\n                \"updatedAt\": \"2025-05-24T11:03:55.818199\",\n                \"deletedAt\": null\n            },\n            \"nomorUrut\": 1,\n            \"nama\": \"caleg 1\",\n            \"jenisKelamin\": \"LAKILAKI\",\n            \"createdAt\": \"2025-05-24T11:51:57.027139\",\n            \"updatedAt\": \"2025-05-24T11:51:57.027139\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"d0660a52-1f6f-4c8b-82ec-c586a9cb3302\",\n            \"dapil\": {\n                \"id\": \"55c1dd16-dc6e-4cea-b149-0912fab6c1da\",\n                \"namaDapil\": \"dapil 1\",\n                \"provinsi\": \"JAWA BARAT\",\n                \"wilayahDapilList\": [\n                    \"Kota Bandung\",\n                    \"Kabupaten Bandung\",\n                    \"Kabupaten Bandung Barat\"\n                ],\n                \"jumlahKursi\": 2,\n                \"createdAt\": \"2025-05-23T22:16:35.971345\",\n                \"updatedAt\": \"2025-05-24T11:11:23.684945\",\n                \"deletedAt\": null\n            },\n            \"partai\": {\n                \"id\": \"b3987d6a-be70-4c39-858d-a1b8c58c95c0\",\n                \"namaPartai\": \"partai kuda\",\n                \"nomorUrut\": 2,\n                \"createdAt\": \"2025-05-24T11:46:04.062778\",\n                \"updatedAt\": \"2025-05-24T11:46:04.062778\",\n                \"deletedAt\": null\n            },\n            \"nomorUrut\": 2,\n            \"nama\": \"caleg 2\",\n            \"jenisKelamin\": \"PEREMPUAN\",\n            \"createdAt\": \"2025-05-24T11:52:41.621428\",\n            \"updatedAt\": \"2025-05-24T11:53:55.92261\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"5cad5cde-38e8-418e-aeef-72007959bd59\",\n            \"dapil\": {\n                \"id\": \"3424e20f-ad68-4908-9a13-78f81c68a328\",\n                \"namaDapil\": \"dapil 2\",\n                \"provinsi\": \"BANTEN\",\n                \"wilayahDapilList\": [\n                    \"Kota Tangerang\",\n                    \"Kabupaten Tangerang\"\n                ],\n                \"jumlahKursi\": 4,\n                \"createdAt\": \"2025-05-24T11:45:48.683027\",\n                \"updatedAt\": \"2025-05-24T11:45:48.683027\",\n                \"deletedAt\": null\n            },\n            \"partai\": {\n                \"id\": \"b3987d6a-be70-4c39-858d-a1b8c58c95c0\",\n                \"namaPartai\": \"partai kuda\",\n                \"nomorUrut\": 2,\n                \"createdAt\": \"2025-05-24T11:46:04.062778\",\n                \"updatedAt\": \"2025-05-24T11:46:04.062778\",\n                \"deletedAt\": null\n            },\n            \"nomorUrut\": 3,\n            \"nama\": \"caleg 3\",\n            \"jenisKelamin\": \"PEREMPUAN\",\n            \"createdAt\": \"2025-05-24T11:53:13.372545\",\n            \"updatedAt\": \"2025-05-24T11:53:13.372545\",\n            \"deletedAt\": null\n        }\n    ],\n    \"currentPage\": 1,\n    \"totalPages\": 1,\n    \"totalCount\": 3\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
